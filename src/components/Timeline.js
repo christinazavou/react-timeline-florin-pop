@@ -1,14 +1,14 @@
-import React from 'react';
-import timelineData from '../App';
-import TimelineItem from './TimelineItem';
+import React from "react";
+import TimelineItem from "./TimelineItem";
+import timelinedata from "./data";
 
 const Timeline = () =>
-    timelineData.length > 0 && (
-        <div className="timeline-container">
-            {timelineData.map((data, idx) => (
-                <TimelineItem data={data} key={idx} />
-            ))}
-        </div>
-    );
+  timelinedata.length > 0 && (
+    <div className="timeline-container">
+      {timelinedata.map((data, idx) => (
+        <TimelineItem data={data} key={idx} />
+      ))}
+    </div>
+  );
 
 export default Timeline;
